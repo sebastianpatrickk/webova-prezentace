@@ -15,7 +15,6 @@
     grid-template-rows: 64px;
     gap: 0 20px;
     grid-auto-rows: 1fr;
-    overflow: hidden;
   }
 
   .header {
