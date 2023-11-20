@@ -21,7 +21,6 @@ body {
   font-weight: 400;
   color: var(--primary-text);
   background-color: var(--primary-background);
-  overflow: hidden;
 }
 
 a {
