@@ -52,10 +52,11 @@ themeSwitcher.addEventListener('click', switchTheme);
 
 // Mobile nav
 window.addEventListener('resize', () => {
-  mobileNav.classList.add('mobile-nav-hidden');
-  mobileHeader.classList.toggle('mobile-header');
-
-  mobileNavBtn.children[0].innerText = 'menu';
+  if (mobileHeader.classList.contains('mobile-header')) {
+    mobileNav.classList.add('mobile-nav-hidden');
+    mobileHeader.classList.toggle('mobile-header');
+    mobileNavBtn.children[0].innerText = 'menu';
+  }
 });
 
 const toggleMobileNav = () => {
