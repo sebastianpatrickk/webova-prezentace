@@ -85,6 +85,8 @@ button {
 .products {
   grid-column: start / end;
 
+  padding-bottom: 16px;
+
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 64px 96px;
@@ -107,7 +109,7 @@ button {
 }
 
 .product:hover .product-image {
-  filter: saturate(6);
+  filter: saturate(4);
 }
 
 .product-image {

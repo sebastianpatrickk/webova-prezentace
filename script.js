@@ -25,7 +25,7 @@ const switchTheme = () => {
   setSwitcherIcon(dataTheme);
 
   rootEl.setAttribute('data-theme', dataTheme);
-  Cookies.set('theme', dataTheme, { expires: 30 }); // Store the theme in a cookie for 30 days
+  Cookies.set('theme', dataTheme, { expires: 30 });
 };
 
 // Set theme by the OS preference or cookie

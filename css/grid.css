@@ -10,8 +10,8 @@
   overflow-x: hidden;
 }
 
-/* @media (max-width: 425px) { */
-@media (max-width: 600px) {
+/* @media (max-width: 600px) { */
+@media (max-width: 545px) {
   .container {
     grid-template-columns: 1fr, 1fr;
     grid-template-rows: 64px;
