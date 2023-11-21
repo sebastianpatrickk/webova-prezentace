@@ -52,7 +52,7 @@
     visibility: hidden;
   }
 
-  .nav :first-child {
+  .nav :first-child :not(:last-child) {
     text-decoration: underline;
   }
 
@@ -67,5 +67,9 @@
 
   .nav-link {
     font-size: 46px;
+  }
+
+  .theme-button .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 48;
   }
 }

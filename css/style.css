@@ -61,13 +61,45 @@ button {
   gap: 24px;
 }
 
+.nav-link-active {
+  text-decoration: underline;
+}
+
 .theme-button {
   display: flex;
   align-items: center;
-  justify-self: center;
+  justify-items: center;
   cursor: pointer;
 }
 
 .mobile-nav-btn {
   display: none;
+}
+
+/* Hero */
+
+.hero {
+  grid-column: start / end;
+
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.hero-text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.hero-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.hero-btn a {
+  font-size: 16px;
+  text-decoration: underline;
 }
