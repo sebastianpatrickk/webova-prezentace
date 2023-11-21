@@ -1,5 +1,6 @@
 const mobileNavBtn = document.querySelector('.mobile-nav-btn');
 const mobileNav = document.querySelector('.nav');
+const mobileHeader = document.querySelector('.header');
 const themeSwitcher = document.querySelector('#theme-switcher');
 
 // Theme switcher
@@ -52,11 +53,14 @@ themeSwitcher.addEventListener('click', switchTheme);
 // Mobile nav
 window.addEventListener('resize', () => {
   mobileNav.classList.add('mobile-nav-hidden');
+  mobileHeader.classList.toggle('mobile-header');
+
   mobileNavBtn.children[0].innerText = 'menu';
 });
 
 const toggleMobileNav = () => {
   mobileNav.classList.toggle('mobile-nav-hidden');
+  mobileHeader.classList.toggle('mobile-header');
 
   if (mobileNavBtn.children[0].innerText === 'menu') {
     mobileNavBtn.children[0].innerText = 'close';
