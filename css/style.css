@@ -102,6 +102,7 @@ button {
   background-color: var(--secondary-background);
   border: var(--primary-border) solid 1px;
   transition: box-shadow 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .product:hover {
